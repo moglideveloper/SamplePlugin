@@ -1,0 +1,28 @@
+<!DOCTYPE idea-plugin PUBLIC "Plugin/DTD" "https://plugins.jetbrains.com/plugin.dtd">
+<idea-plugin url="https://github.com/logicovercode/About"
+             xmlns:xi="http://www.w3.org/2001/XInclude"
+             require-restart="true">
+    <id>SamplePlugin</id>
+    <name>IPDemo</name>
+    <vendor email="moglideveloper@gmail.com" url="https://github.com/moglideveloper/SamplePlugin">SamplePlugin</vendor>
+
+    <description><![CDATA[
+    Sample Plugin to reproduce problem
+    ]]></description>
+
+    <!-- please see https://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <depends>org.intellij.scala</depends>
+
+
+    <actions>
+        <group id="IjPluginSample" text="Sample" description="examples action">
+            <add-to-group group-id="MainMenu" anchor="last"/>
+
+            <action class="msg_popup.MsgPopupAction" id="IPD.MsgPopupActionId"
+                    text="simple msg pop up"/>
+
+        </group>
+    </actions>
+
+</idea-plugin>
